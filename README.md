@@ -22,7 +22,7 @@ You then create link like this:
 ### [Arguments]:
 There are 2 types of arguments:
 - static args (passed to the protocol upon creation)
-- arguments that are passed with the protocol when invoking
+- arguments that are passed with the protocol when invoking (via webbrowser)
 	
 #### [Static Arguments]:
 Static args are store in the registry of windows next to your protocol. The can only be changed using regedit.
