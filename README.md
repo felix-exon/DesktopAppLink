@@ -10,13 +10,13 @@ It's fairly simple to use:
  DesktopAppLink.CreateLink(
       "applink.sample", 
       "\"<path to exe>\"", 
-      "\"-workingDir=<someDirectory>\"");
+      "<optionalStaticArgument>");
 ```
 
 You then create link like this:
 
 ```html
-<a href="applink.sample:">Run Desktop App</a>
+<a href="applink.sample:optionalArgumentsFromLink">Run Desktop App</a>
 ```
 
 ### [Arguments]:
