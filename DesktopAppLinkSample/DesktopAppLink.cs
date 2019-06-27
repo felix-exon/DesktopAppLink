@@ -46,7 +46,7 @@ namespace DesktopAppLinkSample
                 if(commandKey == null)
                     throw new Exception("error on creating command key");
 
-                commandKey.SetValue(null, $"\"{applicationPath}\" {arguments} --\"%1\"");
+                commandKey.SetValue(null, $"\"{applicationPath}\" {arguments} \"%1\"");
 
                 root.Close();
             }
@@ -78,9 +78,10 @@ namespace DesktopAppLinkSample
             }
         }
 
-        public static string GetSampleHyperlink(string protocolName)
+        public static string GetSampleHyperlink(string protocolName, string text = null, string arguments = null)
         {
-            return $"<a href={protocolName.ToLower()}:>Sample Text</a>";
+            string hyperLinkText = text ?? "Sample Text";
+            return $"<a href={protocolName?.ToLower()}:{arguments}>{hyperLinkText}</a>";
         }
     }
 
