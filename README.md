@@ -2,7 +2,7 @@
 
 With DesktopAppLink any app on your system can be opened from your browser
 
-## Usage:
+## [Usage]:
 
 It's fairly simple to use:
 
@@ -19,15 +19,15 @@ You then create link like this:
 <a href="applink.sample:">Run Desktop App</a>
 ```
 
-###Arguments:
+### [Arguments]:
 There are 2 types of arguments:
 	- static args (passed to the protocol upon creation
 	- arguments that are passed with the protocol when invoking
 	
-#### static args:
+#### [Static Arguments]:
 Static args are store in the registry of windows next to your protocol. The can only be changed using regedit.
 
-#### normal args (from hyperlink):
+#### [Arguments from Hyperlink]:
 Links from hyperlink will always be passed with the protocolname to the application:
 
 <img src="./img/tester.png" >
