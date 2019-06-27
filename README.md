@@ -21,7 +21,7 @@ You then create link like this:
 
 ### [Arguments]:
 There are 2 types of arguments:
-- static args (passed to the protocol upon creation
+- static args (passed to the protocol upon creation)
 - arguments that are passed with the protocol when invoking
 	
 #### [Static Arguments]:
