@@ -18,6 +18,25 @@ You then create link like this:
 ```html
 <a href="applink.sample:">Run Desktop App</a>
 ```
+
+###Arguments:
+There are 2 types of arguments:
+	- static args (passed to the protocol upon creation
+	- arguments that are passed with the protocol when invoking
+	
+#### static args:
+Static args are store in the registry of windows next to your protocol. The can only be changed using regedit.
+
+#### normal args (from hyperlink):
+Links from hyperlink will always be passed with the protocolname to the application:
+
+<img src="./img/tester.png" >
+```html
+<a href="mycustomprotocol:origin=web">Click me!</a>
+```
+
+<img src=".img/arguments.png" >
+
 ## Results:
 
 ### Chrome:
