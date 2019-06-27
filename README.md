@@ -31,11 +31,12 @@ Static args are store in the registry of windows next to your protocol. The can 
 Links from hyperlink will always be passed with the protocolname to the application:
 
 <img src="./img/tester.png" >
+
 ```html
 <a href="mycustomprotocol:origin=web">Click me!</a>
 ```
 
-<img src=".img/arguments.png" >
+<img src="./img/arguments.png" >
 
 ## Results:
 
