@@ -1,8 +1,10 @@
 # DesktopAppLink
 
-With DesktopAppLink any app on your system can be opened from your browser
+## Purpose
 
-## [Usage]:
+The goal of this project is to easily create weblinks that pass data to client software installed on any  device running windows.
+
+## Using
 
 It's fairly simple to use:
 
@@ -12,22 +14,23 @@ It's fairly simple to use:
       "\"<path to exe>\"", 
       "<optionalStaticArgument>");
 ```
+This will set up the protocol in the registry of your pc.
 
-You then create link like this:
+You then create link like this and embed it on any webpage.
 
 ```html
 <a href="applink.sample:optionalArgumentsFromLink">Run Desktop App</a>
 ```
 
-### [Arguments]:
+### Arguments
 There are 2 types of arguments:
 - static args (passed to the protocol upon creation)
 - arguments that are passed with the protocol when invoking (via webbrowser)
 	
-#### [Static Arguments]:
+#### Static Arguments
 Static args are store in the registry of windows next to your protocol. The can only be changed using regedit.
 
-#### [Arguments from Hyperlink]:
+#### Arguments from Hyperlink
 Links from hyperlink will always be passed with the protocolname to the application:
 
 <img src="./img/tester.png" >
@@ -38,12 +41,12 @@ Links from hyperlink will always be passed with the protocolname to the applicat
 
 <img src="./img/arguments.png" >
 
-## Results:
+## Results
 
-### Chrome:
+### Chrome
 
 <img src="./img/chrome.png" >
 
-### Firefox:
+### Firefox
 
 <img src="./img/firefox.png" >
